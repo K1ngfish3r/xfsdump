@@ -7,7 +7,7 @@
 #
 Name     : xfsdump
 Version  : 3.1.12
-Release  : 2
+Release  : 3
 URL      : https://mirrors.edge.kernel.org/pub/linux/utils/fs/xfs/xfsdump/xfsdump-3.1.12.tar.xz
 Source0  : https://mirrors.edge.kernel.org/pub/linux/utils/fs/xfs/xfsdump/xfsdump-3.1.12.tar.xz
 Summary  : Backup and restore utilities for the XFS filesystem
@@ -27,9 +27,8 @@ BuildRequires : xfsprogs-dev
 %define debug_package %{nil}
 
 %description
-_____________________
-See the file doc/INSTALL for build, installation and post-
-install configuration steps.
+The xfsdump package contains xfsdump, xfsrestore and a number of
+other utilities for administering XFS filesystems.
 
 %package bin
 Summary: bin components for the xfsdump package.
@@ -73,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1718107967
+export SOURCE_DATE_EPOCH=1718108052
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -107,7 +106,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1718107967
+export SOURCE_DATE_EPOCH=1718108052
 rm -rf %{buildroot}
 export GOAMD64=v2
 GOAMD64=v2
